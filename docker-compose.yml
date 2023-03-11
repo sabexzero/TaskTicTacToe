@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tictactoeapi:
+    image: ${DOCKER_REGISTRY-}tictactoeapi
+    build:
+      context: .
+      dockerfile: TicTacToeApi/Dockerfile
